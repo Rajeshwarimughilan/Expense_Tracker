@@ -1,7 +1,7 @@
 import { Expense } from "../types/expense.types";
 import { CSV_HEADERS } from "../config/constants";
 
-export function convertExpenseToCSV(expenses: Expense[]) :string{
+export function convertExpensesToCSV(expenses: Expense[]) :string{
     const rows = expenses.map((expense) =>
     [
         expense.id,
