@@ -2,7 +2,7 @@ import {z} from "zod";
 import {DATE_FORMAT_REGEX} from "../config/constants";
 import { number } from "zod/v4";
 
-export const createExpenseScheme = z.object({
+export const createExpenseSchema  = z.object({
     title: z.string().trim().min(1, "Title is required").max(100, "title is too long"),
     amount: z.number({invalid_type_error: "Amount must be a number"}).positive("Amount must be positive"),
     category: z.string().trim().min(1, "Category is required").max(50, "Category is too long"),
