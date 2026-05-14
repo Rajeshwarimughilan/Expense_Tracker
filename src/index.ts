@@ -11,4 +11,4 @@ async function bootstrap(): Promise<void> {
   }
 }
 
-void bootstrap();
+void bootstrap();//void here is NOT return type.evaluates expression and discards result.
